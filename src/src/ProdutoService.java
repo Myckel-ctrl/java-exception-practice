@@ -9,4 +9,14 @@ public class ProdutoService {
         System.out.println("Produto cadastrado com sucesso.");
     }
 
+    public void remover(String nome) {
+        for(Produto p: produtos) {
+            if (p.getNome().equalsIgnoreCase(nome)){
+                produtos.remove(p);
+                System.out.println("Produto removido com sucesso.");
+                return;
+            }
+        }
+    }
+
 }
