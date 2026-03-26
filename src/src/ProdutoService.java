@@ -17,6 +17,8 @@ public class ProdutoService {
                 return;
             }
         }
+
+        System.out.println("Produto não encontrado.");
     }
 
     public void listar() {
