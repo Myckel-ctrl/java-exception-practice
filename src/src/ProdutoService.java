@@ -39,5 +39,7 @@ public class ProdutoService {
                 return;
             }
         }
+
+        System.out.println("Nenhum produto encontrado.");
     }
 }
