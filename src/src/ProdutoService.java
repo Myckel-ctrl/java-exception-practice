@@ -19,4 +19,14 @@ public class ProdutoService {
         }
     }
 
+    public void listar() {
+        if (produtos.isEmpty()) {
+            System.out.println("Nenhum produto cadastrado.");
+            return;
+        }
+
+        for(Produto p: produtos) {
+            System.out.println(p);
+        }
+    }
 }
