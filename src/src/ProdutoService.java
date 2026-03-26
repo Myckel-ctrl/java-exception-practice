@@ -29,4 +29,13 @@ public class ProdutoService {
             System.out.println(p);
         }
     }
+
+    public void buscar(String nome) {
+        for(Produto p: produtos) {
+            if (p.getNome().equalsIgnoreCase(nome)){
+                System.out.println(p);
+                return;
+            }
+        }
+    }
 }
