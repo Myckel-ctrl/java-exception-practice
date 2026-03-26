@@ -35,7 +35,7 @@ public class ProdutoService {
     public void buscar(String nome) {
         for(Produto p: produtos) {
             if (p.getNome().equalsIgnoreCase(nome)){
-                System.out.println(p);
+                System.out.println(p.getNome());
                 return;
             }
         }
