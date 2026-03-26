@@ -28,7 +28,7 @@ public class ProdutoService {
         }
 
         for(Produto p: produtos) {
-            System.out.println(p);
+            System.out.println(p.getNome());
         }
     }
 
