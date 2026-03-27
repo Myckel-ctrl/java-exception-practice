@@ -12,7 +12,7 @@ public class Produto {
         }
 
         if (quantidade <= 0) {
-            throw new ValorInvalidoException("Quantidade inválida " + quantidade)
+            throw new ValorInvalidoException("Quantidade inválida " + quantidade);
         }
 
         this.nome = nome;
