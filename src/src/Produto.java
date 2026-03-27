@@ -8,7 +8,11 @@ public class Produto {
     public Produto(String nome, double preco, int quantidade, String categoria) {
 
         if (preco <= 0) {
-            throw new ValorInvalidoException("Preço inválido" + preco);
+            throw new ValorInvalidoException("Preço inválido " + preco);
+        }
+
+        if (quantidade <= 0) {
+            throw new ValorInvalidoException("Quantidade inválida " + quantidade)
         }
 
         this.nome = nome;
