@@ -40,6 +40,6 @@ public class ProdutoService {
             }
         }
 
-        System.out.println("Nenhum produto encontrado.");
+        throw new ProdutoNaoEncontradoException("Produto não encontrado.");
     }
 }
