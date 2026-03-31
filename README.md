@@ -1,4 +1,4 @@
-# 1. Prática em Java Exception
+# 1. Exercício de Java Exception
 
 ---
 
