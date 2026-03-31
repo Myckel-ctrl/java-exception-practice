@@ -65,13 +65,13 @@ public class Main {
                         System.out.println("Opção inválida.");
                         break;
                 }
-            } catch (InputMismatchException e) {
-                System.out.println("Erro: entrada inválida.");
-                read.nextLine();
             } catch (ValorInvalidoException e) {
                 System.out.println(e.getMessage());
             } catch (ProdutoNaoEncontradoException e) {
                 System.out.println(e.getMessage());
+            } catch (InputMismatchException e) {
+                System.out.println("Erro: entrada inválida.");
+                read.nextLine();
             }
         }
     }
